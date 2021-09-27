@@ -1,4 +1,6 @@
 require('@nomiclabs/hardhat-waffle')
+require('hardhat-gas-reporter')
+
 const secret = require('./secret')
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -19,10 +21,13 @@ task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: '0.8.4',
+  gasReporter: {
+    currency: 'USD',
+  },
   networks: {
     bsctestnet: {
       url: secret.url,
-      accounts: [secret.key]
-    }
-  }
+      accounts: [secret.key],
+    },
+  },
 }
