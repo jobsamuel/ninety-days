@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx hardhat test",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{sol,js,jsx,json,md}\""
   },
   "author": "",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "ethers": "^5.4.7",
     "hardhat": "^2.6.4",
     "hardhat-gas-reporter": "^1.0.4",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.18"
   }
 }
